@@ -1,0 +1,93 @@
+.contenedor-principal {
+  height: 480px;
+  width: 660px;
+  background-color: #002868;
+  border: 1px solid black;
+}
+
+.mitad {
+  height: 240px;
+}
+
+.b-cuadrado {
+  height: 210px;
+  width: 210px;
+  background-color: #FFFFFF;
+}
+
+.b-rectangulo {
+  height: 210px;
+  width: 390px;
+  background-color: #FFFFFF;
+}
+
+.r-cuadrado {
+  height: 180px;
+  width: 180px;
+  background-color: #EF2B2D;
+}
+
+.r-rectangulo {
+  height: 180px;
+  width: 360px;
+  background-color: #EF2B2D;
+}
+
+#superior {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#inferior {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#uno {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#dos {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#tres {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+#cuatro {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+
+@media screen and (max-width: 768px) {
+  .contenedor-principal {
+    height: 480px;
+    width: 660px;
+    background-color: red;
+    border: 1px solid black;
+  }
+  .r-cuadrado {
+    height: 180px;
+    width: 180px;
+    background-color: blue;
+  }
+  .r-rectangulo {
+    height: 180px;
+    width: 360px;
+    background-color: blue;
+  }
+}

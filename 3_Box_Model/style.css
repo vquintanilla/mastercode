@@ -1,0 +1,17 @@
+.caja {
+    background-color: aquamarine;
+    width: 50%;
+}
+
+.caja2 {
+    background-color: magenta;
+    height: 100px;
+}
+.rojo {
+    color: red;
+}
+.boxmodel{
+    margin: 50px 25px 10px 5px; /*se lee en el sentido de las manecillas del reloj o también puedo utilizar magin-top, margin-right, margin-bottom, margi-left*/
+    border: 10px solid greenyellow;
+    padding: 5px;
+}

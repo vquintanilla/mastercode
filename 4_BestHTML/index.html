@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Este sitio es un ejemplo de como utilizar etiquetas meta">
+    <meta content="devf, ,master, perro, mascotas">
+    <meta content="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fdevf-website.s3-us-west-1.amazonaws.com%2FThumbnails%2Fdevf-logo-a.png" name="image">
+    <meta content="es-CO" http-equiv="Content-Language"> 
+    <link rel="stylesheet" href="style.css">
+    <title>HTML inputs</title>
+</head>
+<body>
+    <form aria-label="Pequeño formulario demostrativo de distintos inputs">
+        <label class="descripcion" for="Nombre">Ingresa tu nombre</label>
+        <input class= "entrada" type="text" name="Nombre" placeholder="Juanito Perez"/>
+
+        <label class="descripcion" for="Number">Dame un numero</label>
+        <input aria-invalid="true" class="entrada" type="number" name="Numero" max="10" min="0" placeholder="10">
+
+        <label class="descripcion" for="Telefono">Dame tu telefono</label>
+        <input class="entrada" type="tel" name="Telefono" autocomplete="off">
+
+        <label class="descripcion" for="Email">Dame tu correo</label>
+        <input class="entrada" type="email" name="Email">
+
+        <label class="descripcion" for="Calendario">Calendario</label>
+        <input class="entrada" type="date" name="Calendario">
+
+        <label class="descripcion" for="Rango">Rango de numero</label>
+        <input class="entrada" type="range" name="Rango" max="10" min="0">
+
+        <label class="descripcion" for="Color">Dame un Color</label>
+        <input class="entrada" type="color" name="Color" >
+
+        <label for="Color">Azul</label>
+        <input type="checkbox" name="Color" >
+
+        <label for="Color">Amarillo</label>
+        <input type="checkbox" name="Color" >
+
+        <label for="Color">Verde</label>
+        <input type="checkbox" name="Color" >
+
+        <label for="Mazda">Mazda</label>
+        <input type="radio" name="Autos" value="Mazda" >
+
+        <label for="Mazda">Volvo</label>
+        <input type="radio" name="Autos" value="Volvo" >
+
+        <label class="descripcion" for="Historia">Coloca una historia</label>
+        <textarea class="input" name="Historia" id="" cols="30" rows="10"> </textarea>
+
+        <input type="submit">
+        
+    </form>
+    
+</body>
+</html>

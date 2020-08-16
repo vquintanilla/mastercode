@@ -1,0 +1,46 @@
+/* System Fonts as used by GitHub */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+  .menu {
+      height: 80px;
+      background-color: #cccccc;
+  }
+
+
+ .fotos {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 236px);
+    grid-gap: 10px;
+    justify-content: center; 
+}
+
+.texto {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #211922;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+
+  .elementos {
+    grid-row-end: span;    
+  }
+
+  .ajustar-foto {
+      max-width: 236px;
+      border-radius: 10%;
+  }
+
+  .botones {
+
+    display: flex;
+    flex-direction: column;
+    position: fixed; 
+    bottom: 20px;
+    right: 10px;
+
+  }

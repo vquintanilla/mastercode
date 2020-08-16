@@ -1,0 +1,44 @@
+/* con asterisco se aplica a todas las etiquetas*/
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blue;
+    font-size: large;
+
+    
+}
+
+
+.green {
+    color: black;
+    font-family: fantasy;
+    font-size: xxx-large;
+}
+
+.magenta {
+    color: black;
+    font-family: monospace;
+    font-size: xx-large;
+    border: 3px solid greenyellow;
+
+}
+
+.blue {
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    display: inline;
+}
+
+#principal {
+
+    color: black;
+    border: 1px solid greenyellow;
+}
+
+body {
+    background-image: url("https://wallpapercave.com/wp/aJ5IFty.jpg");
+ 
+  }
+
+/*si quieres trabajar por grupos usas clases, si quieres solo dar un atributo a un objeto usas ID
+siempre tiene prioridad el selector ID*/

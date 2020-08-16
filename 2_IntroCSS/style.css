@@ -1,0 +1,33 @@
+/* con asterisco se aplica a todas las etiquetas*/
+*{
+    font-family:Arial;
+    color: blueviolet;
+}
+/*Selector por etiqueta*/
+h1 {
+    color: red;
+    font-size: larger;
+    font-family: Arial;
+    background-color: aquamarine;
+}
+
+h2 {
+    color: blue;
+}
+
+/* selectores por id, se utilizan una sola vez */
+#principal {
+    display: none; /*para ocultar algo*/
+    color: orange;
+    border: 1px solid greenyellow;
+}
+/* Selectores por clase, mi clase se llama red*/
+/* Las clases tienen mayor peso sobre los selectores de etiqueta*/
+.red {
+    color: red;
+    font-family: fantasy;
+    display: inline;
+}
+
+/*si quieres trabajar por grupos usas clases, si quieres solo dar un atributo a un objeto usas ID
+siempre tiene prioridad el selector ID*/

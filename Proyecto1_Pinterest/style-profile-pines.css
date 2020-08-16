@@ -1,0 +1,599 @@
+ .nav {
+    height: 70px;
+    margin-bottom: 10px;
+    width: 100%;
+} 
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+.h1{
+    display: block;
+        height: 48px;
+    font-size: 36px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.encabezado {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imagen{
+
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+
+}
+
+.imagen:active {
+    height: 118px;
+    width: 118px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 50%;
+    border: solid 4px rgb(147, 204, 238);
+}
+
+.media{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0px;
+}
+.media-izq{
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.media-der{
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+/* .iconos {
+    height: 28px;
+    width: 28px;
+    padding: 8px;
+    border-radius: 50%;
+} */
+
+.botones {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.txtbtn{
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: inherit
+}
+.parrafo {
+    height: 45px;
+    font-weight: bold;
+    color: #211922;
+    font-size: 16px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.btn {
+    font-weight: bold;
+    font-size: 16px;
+    background-color: rgb(32, 31, 31);
+    color: white;
+    height: 48px;
+    min-width: 70px;
+    border-radius: 28px;
+    margin-top: 0px;
+}
+.btn2 {
+    font-weight: bold;
+    font-size: 16px;
+    height: 48px;
+    min-width: 70px;
+    border-radius: 28px;
+    background-color: white;
+    border: solid white;
+    margin-top: 0px;
+}
+.btn2:hover{
+    height: 48px;
+    min-width: 70px;
+    background-color: rgb(226, 224, 224);
+    border-radius: 28px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 0px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 330px);
+    text-align: center;
+    justify-content: center;
+  }
+
+  .grid-cont-int {
+   border: 10px solid white;
+    /* padding: 20px; */
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+ }
+ .grid-item {
+    height: 225px;
+    width: 320px;
+    border-radius: 5px;
+    align-self: center;
+    /* padding: 20px; */
+ }
+ h3 {
+     font-weight: bold;
+     margin-top: 10px;
+     margin-bottom: 0px;
+     text-align: left;
+     padding-left: 20px;
+ }
+.parrafo2 {
+    color: #211922;
+    font-size: 14px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.icono {
+    fill: currentColor;
+    stroke-width: 0;
+	color: var(--gestalt-colorGray0);
+    display: block;
+    height:20px;
+    width:20px;
+    padding: 10px;
+}
+
+.icono:hover{
+    height: 20px;
+    width: 20px;
+    display: block;
+    background-color: rgb(226, 224, 224);
+    border-radius: 50%;
+}
+
+/*Style for navbar
+/* Add a white background color to the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  
+  /* Style the links inside the navigation bar */
+  .derecha {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    padding: 14px 16px;
+    border-radius: 30px;
+    
+    }
+  
+  .izquierda {
+   float: left;
+    display: flex;
+    flex-direction: row;
+    color: #111111;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 30px;
+    
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the "active" element to highlight the current page */
+  
+  .seleccion:focus {
+     
+    background-color: black;
+    color: white;
+  }
+  
+  /* Style the search box inside the navigation bar */
+  .redondeado {
+    padding: 6px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #e9e9e9;
+    border: green;
+    border-radius: 30px;
+    height: 30px;
+    width: 70%;
+    margin-top: 0px;
+    margin-right: 1px;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+
+  .topnav input[type=text]:focus {
+
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+  
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 70%) {
+    
+    .topnav a, .topnav input[type=text], .topnav .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;  
+    }
+  }
+  
+  
+  .gUZ {
+    fill: currentColor;
+    stroke-width: 0;
+    vertical-align: middle;
+    color: #e60023;
+  }
+  
+  .B9u {
+    color: #767676;
+   
+  }
+  
+  
+  .cambio:focus {
+    display: block;
+    fill: currentColor;
+    stroke-width: 0;
+    
+    color: black;
+  }
+  
+  .alinearlupa {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  }
+
+  /*estilos de pines*/
+  html {
+    font-size: 62.5%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* HEADER TODAY */
+
+.t-title,
+.t-title-2 {
+    text-align: center
+}
+
+
+.t-title h3 {
+    font-size: 1.8rem;
+    margin-bottom: .2rem;
+}
+
+.t-title h2 {
+    font-size: 3.3rem;
+    margin-top: 0;
+}
+
+.t-title-2 h3 {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+/* FOOTER TODAY */
+
+.end-today {
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.end-today div {
+    width: 28rem;
+    margin: 0 auto;
+}
+
+.end-today p {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.end-today h2 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.f-b-btn-gray {
+    border-radius: 16.9rem;
+    background-color: #eeeeee;
+    font-size: 1.6rem;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 2rem;
+
+}
+
+.f-b-btn-gray:hover {
+    background-color: #E2E2E2;
+    outline: 0 !important;
+}
+
+.f-b-btn-gray:focus {
+
+    outline: 0 !important;
+}
+
+
+/* FOOTER BTN  */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 95%;
+    top: 85%;
+    z-index: 1;
+    
+}
+
+footer div {
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 6px 7px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 6px 7px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 6px 7px -6px rgba(0, 0, 0, 0.75);
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: lighter;
+    background-color: #fcfcfc;
+}
+
+footer div:hover {
+  align-items: center;
+  font-size: 2rem;
+  font-weight: lighter;
+  background-color:rgb(226, 224, 224);
+  border-radius: 50%;
+}
+
+footer div p {
+    margin: 0;
+}
+
+/* GRID */
+
+.t-contenedor-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 30rem);
+    gap: 3rem;
+    justify-content: center;
+    margin-bottom: 8rem;
+}
+
+
+.t-c-g-item img {
+    width: 100%;
+}
+
+/* tamaño de 8 filas */
+.extra-grande {
+    grid-row-end: span 8;
+}
+
+/* tamaño de 9 filas */
+.grande {
+    grid-row-end: span 4;
+}
+
+/* tamaño de 7 filas */
+.mediano {
+    grid-row-end: span 3
+}
+
+/* tamaño de 3 filas */
+.pequeño {
+    grid-row-end: span 3;
+}
+
+
+/* IMAGEN CON CAPTION */
+
+
+.t-img-si-caption img {
+    border-radius: 4rem 4rem 0 0;
+    height: 80%;
+}
+
+.t-img-caption p {
+    max-width: 32rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+}
+
+
+/* IMAGEN CON CAPTION 3 IMG */
+
+
+
+
+
+.caption-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.caption-3 div {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 17.5rem;
+    width: 33.33%;
+}
+
+.t-img-caption-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.t-img-caption-3 h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.t-img-caption-3 h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+.img-5-1 {
+    border-top-left-radius: 4rem;
+}
+
+.img-5-3 {
+    border-top-right-radius: 4rem;
+}
+
+
+/* IMAGEN SIN CAPTION */
+.t-img-no-caption {
+    /* border-radius: 4rem; */
+    color: white;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 30rem;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.t-img-no-caption img {
+    border-radius: 4rem;
+    
+}
+
+.centrado {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+.medio-centrado {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+
+.centrado h3 {
+    font-size: 1.6rem;
+    margin-bottom: .5rem;
+}
+
+.centrado h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+.btnderecha {
+  color: black;
+  height: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .t-contenedor-grid {
+        grid-template-columns: repeat(2, 25rem);
+        margin-bottom: 8rem;
+        grid-gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .t-contenedor-grid {
+        grid-template-columns: repeat(1, 35rem);
+        margin-bottom: 8rem;
+        grid-gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .t-contenedor-grid {
+        grid-template-columns: repeat(1, 28rem);
+        margin-bottom: 8rem;
+        grid-gap: 2rem;
+    }
+
+    .caption-3 div {
+
+        height: 15rem;
+
+    }
+}

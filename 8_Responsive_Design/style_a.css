@@ -1,0 +1,57 @@
+body{
+    background-image: url('assets/background.svg');
+    background-repeat: no-repeat;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0px;
+}
+
+li{
+   /* display: inline;
+    float: right;*/
+    margin: 3px;
+}
+
+li a {
+    color: white;
+    font-family: Helvatica;
+    font-size: 10px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 11px;
+    text-align: center;
+
+}
+
+main{
+    display: flex;
+    align-items: center;
+}
+
+summary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+boton{
+    height: 27px;
+    width: 108px;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    border: 0px solid;
+}
+
+content{
+    height: 100px;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+
+}
