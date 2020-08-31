@@ -1,0 +1,16 @@
+.image-pollito{
+    width: 400px;
+    margin: 0 auto;
+    align-items: center;
+    border: solid 2px black;
+    border-radius: 5%;
+}
+
+.titulo {
+    font-family: sans-serif;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+}

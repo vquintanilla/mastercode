@@ -1,0 +1,167 @@
+body, html {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ヒラギノ角ゴ Pro W3,Hiragino Kaku Gothic Pro,メイリオ,Meiryo,ＭＳ Ｐゴシック,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  color: #211922;
+  font-size: 17px;
+}
+
+/*Style for navbar
+/* Orientacion y fondo de contenedor de Navbar */
+.topnav {
+  
+    
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+   
+  }
+ /* Orientacion,Fuente, color y tamaño de Iconos de Izquierda */
+  .izquierda {
+  
+    color: #111111;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 30px;
+    
+  }
+  
+   /* Orientacion,Fuente, color y tamaño de Iconos de Searchbox */
+    .redondo {
+        display: flex;
+        background-color: #e9e9e9;
+        border: #e9e9e9;
+        border-radius: 30px;
+        height: 30px;
+        width: 100%;
+        padding: 6px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        
+    }
+   
+ 
+  .redondeado { 
+      display: flex;
+      align-items: center;
+    
+    padding: 6px;
+    background-color: #e9e9e9;
+    border-radius: 30px;
+    width: 80%;
+
+  }
+ /* Orientacion y tamaño de Iconos de derecha */
+ .derecha {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  border-radius: 50%;
+  padding: 5px;
+  margin-left: 40px;
+  }
+  /* Cambia el fondo al pasar sobre el boton */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  
+  }
+  .topnav img:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Cambia el color al seleccionar */
+  
+  .seleccion:focus {
+     
+    background-color: black;
+    color: white;
+  }
+  
+  
+
+  .topnav input[type=text]:focus {
+
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+  
+  }
+  
+
+  /* SVG Colors */
+  .gUZ {
+    fill: currentColor;
+    stroke-width: 0;
+    vertical-align: middle;
+    color: #e60023;
+  }
+  
+  .B9u {
+    color: #767676;
+    fill: currentColor;
+    stroke-width: 0;
+    vertical-align: middle;
+  }
+  
+  .icn-perfil {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+/*Estilo INICIO*/
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+  color: #211922;
+}
+
+.columnas {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.ajustar-foto {
+  max-width: 236px;
+  border-radius: 10%;
+  padding: 6px;
+}
+
+.ajustar-foto:hover {
+  cursor: zoom-in;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  position: fixed; 
+  bottom: 20px;
+  right: 10px;
+}
+
+.botones a:hover {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.texto {
+  width: 224px;
+  height: auto;
+  margin-top: 0px;
+  padding: 2px;
+}
+
+.texto a:hover {
+  cursor: zoom-in;
+}
+
+
