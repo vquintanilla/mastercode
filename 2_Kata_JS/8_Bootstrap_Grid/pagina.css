@@ -1,0 +1,31 @@
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.carrusel{
+height: 10rem;
+}
+
+.img{
+    padding-top: 1rem;
+    height: 100%;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    }
+.h3{
+
+    -webkit-text-stroke: 1px black;
+
+}
+
+.div {
+    height: 10px;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+}
