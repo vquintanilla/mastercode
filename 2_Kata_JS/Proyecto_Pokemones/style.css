@@ -1,0 +1,79 @@
+.nav{
+background-color: red;
+justify-content: center;
+}
+
+body {
+  background-color: black;
+ }
+
+.multicolor {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/001/217/310/non_2x/multicolor-mosaic-background-vector.jpg');
+    background-size: 25%;
+}
+
+.h5{
+  font-size: 1,5rem;
+}
+
+.rotar:hover {
+  height: 11rem;
+  width: 11rem;  
+  transform: rotate(50deg);
+    border: solid;
+    border-radius: 50%;
+
+}
+
+.img2{
+  justify-content: center;
+  height: 20 rem;
+  width: 50%;
+  padding-top: 0px;
+  margin-top: 0;
+}
+
+.img-cont{
+  display: flex;
+  justify-content: center;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    display: flex;
+    background-image: url('https://www.freevector.com/uploads/vector/preview/9373/FreeVector-Multicolor-Background.jpg');
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    height: 80%;
+    border-radius: 5%;
+  }
+
+  /* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    align-content: flex-start;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
