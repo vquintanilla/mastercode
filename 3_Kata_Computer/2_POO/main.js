@@ -16,10 +16,20 @@ class Animal {
     comer(comida) {
       return `${this.nombre} está comiendo ${comida}!`;
     }
+
+//getters
+getNombre(){
+    return this.nombre;
+}
+  
+//setters
+    setNombre(newName) {
+        return this.nombre = newName;
+  }
+    
   }
   
-  
-  
+
   const animal = new Animal("Perro", 4, "Ayudante de Santa");
   
   /*
