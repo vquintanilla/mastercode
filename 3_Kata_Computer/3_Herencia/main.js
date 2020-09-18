@@ -36,3 +36,21 @@ console.log(gato.ronronear());
 
 console.log('---------------------------------');
 
+//camaleon una instancia de mascota
+class Camaleon extends Mascota {
+    constructor(nombre, patas) {
+      super(nombre, patas);
+      this.color = 'verde';
+    }
+  
+    setColor(nuevoColor) {
+      this.color = nuevoColor;
+    }
+  }
+  
+  const camaleon = new Camaleon('Rango', 4);
+  console.log(camaleon);
+  console.log(camaleon.comer());
+  camaleon.setColor('rojo');
+  console.log(camaleon);
+//console.log(camaleon.ronronear()); da error porque ronronear es un método de la clase Gato
