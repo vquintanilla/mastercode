@@ -38,3 +38,7 @@ class LinkedList{
         this.leng++;
 }
 }
+
+const listaDeAlumnos = new LinkedList();
+listaDeAlumnos.add('Valeria');
+console.log(listaDeAlumnos);
