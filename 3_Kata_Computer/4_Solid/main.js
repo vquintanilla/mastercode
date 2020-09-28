@@ -25,6 +25,7 @@ class Documental extends Largometraje {
     }
 }
 
+//instancias
 let halloween = new Pelicula("Halloween Pandemia", 189, "John Carpenter", "Terror");
 let donFKillCats = new Documental("Don't F**k with cats", 56, "Mark Lewis", "Jhon Green");
 
