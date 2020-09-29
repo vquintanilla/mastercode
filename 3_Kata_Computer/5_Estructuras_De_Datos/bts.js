@@ -84,6 +84,7 @@ class Tree {
 
 const arbol = new Tree();
 arbol.add(12);
+arbol.add(11);
 arbol.add(55);
 arbol.add(23);
 arbol.add(13);
