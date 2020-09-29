@@ -1,4 +1,3 @@
-// TODO: Implementación de la cola.
 
 class Queue {
     constructor(){
@@ -21,7 +20,6 @@ class Queue {
         return this.collection[0];
     }
 }
-// TODO: Ver ejemplos de una cola.
 
 const filaDeAsesorias = new Queue();
 
@@ -32,6 +30,7 @@ filaDeAsesorias.enqueue('César');
 filaDeAsesorias.enqueue('Keneth');
 
 // Aquí estoy esperando a que entren a la llamada, pero quien es el primero?
+
 
 setInterval(function() {
     if(!filaDeAsesorias.isEmpty()){
