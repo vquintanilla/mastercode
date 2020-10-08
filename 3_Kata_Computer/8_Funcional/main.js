@@ -96,4 +96,4 @@ frutasOrdenadas = frutas.sort();
 // Reduce
 const reducer = (accumulator, currentValue) => accumulator + currentValue;
 const sumatoria = numbers.reduce(reducer);
-console.log(sumatoria);
+console.log("sumatoria "+sumatoria);
