@@ -32,7 +32,7 @@ filaDeAsesorias.enqueue('Keneth');
 // Aquí estoy esperando a que entren a la llamada, pero quien es el primero?
 
 
-setInterval(function() {
+setInterval(function(d) {
     if(!filaDeAsesorias.isEmpty()){
         console.log('Atendiendo a ', filaDeAsesorias.dequeue());
         console.log('Cuantos quedan por atender', filaDeAsesorias.length());
