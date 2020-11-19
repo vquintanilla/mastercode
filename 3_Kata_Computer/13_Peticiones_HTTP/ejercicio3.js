@@ -1,9 +1,7 @@
-/* 2.- Hacer una funcion que haga una petición (Ejemplo: peticionLibro(“i robot”);
-Buscar un libro y traer el o los autores del primer libro
-http://openlibrary.org/search.json?q=i+robot)  */
+//3.- Hacer una petición por autor y devolver la lista de sus libros http://openlibrary.org/search.json?author=asimov
+
 const request = require('request');
 
-/* con busqueda lineal
 const getLibroByName = (name) => {
   request.get(`http://openlibrary.org/search.json?q=i+robot`, function (error, response, body) {
     if (response.statusCode === 200) {
@@ -27,20 +25,4 @@ const getLibroByName = (name) => {
   });
 }
 
-getLibroByName("Robotics"); */
-
-const getLibroByName = (name) => {
-    name = name.replace(/ /g, "+");
-    request.get(`http://openlibrary.org/search.json?q=${name}`, function (error, response, body) {
-        const json = JSON.parse(body);
-        if (response.statusCode === 200) {
-            console.log(json.docs[0].author_name)
-        } else {
-            console.log("Ocurrio un error en la peticion..");
-        }
-    });
-
-}
-
-
-getLibroByName("Hegel Was Right");
+getLibroByName("Robotics");
