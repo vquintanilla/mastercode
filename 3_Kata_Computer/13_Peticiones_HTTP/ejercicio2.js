@@ -29,12 +29,21 @@ const getLibroByName = (name) => {
 
 getLibroByName("Robotics"); */
 
-const getLibroByName = (name) => {
-    name = name.replace(/ /g, "+");
-    request.get(`http://openlibrary.org/search.json?q=${name}`, function (error, response, body) {
+const getAuthorByBook = (bookName) => {
+    bookName = bookName.replace(/ /g, "+");
+    request.get(`http://openlibrary.org/search.json?q=${bookName}`, function (error, response, body) {
         const json = JSON.parse(body);
         if (response.statusCode === 200) {
-            console.log(json.docs[0].author_name)
+           // console.log(json.docs[0].author_name[0])
+          // (json.docs[0].author_name.forEach(author => {console.log(author)}))
+           // json.docs[0].author_name.forEach(author => console.log(author));
+            json.docs.forEach (book => console.log(book.title_suggest)) //ejercicio 3
+            /*
+                TODO: Buscar qué es y cómo funciona
+                -map
+                -filter
+                -reduce
+            */
         } else {
             console.log("Ocurrio un error en la peticion..");
         }
@@ -43,4 +52,4 @@ const getLibroByName = (name) => {
 }
 
 
-getLibroByName("Hegel Was Right");
+getAuthorByBook("El Olvido que seremos");
