@@ -1,4 +1,17 @@
-const edad = 9;
+//const edad = 14;
+
+/* el primer parámetro resuelve y el segundo rechaza
+const promesa = new Promise((resolve, reject)=> {
+resolve ("Yujuy")
+});
+console.log(promesa); */
+
+/* se puede mandar una función dentro de la promesa
+const sumar = (num1, num2) => num1 + num2;
+const promesa = new Promise((resolve, reject)=> {
+resolve (sumar)
+});
+console.log(promesa); */
 
 // const promesa = new Promise((resolve, reject) => {
 //   if (edad >= 18) resolve("Eres mayor de edad")

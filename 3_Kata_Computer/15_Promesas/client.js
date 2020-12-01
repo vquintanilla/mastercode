@@ -7,6 +7,9 @@ const getAllCivilizations = () => {
   const GET_CIVILIZATIONS = `${AoE_API}${CIVILIZATIONS}`;
 
   request.get(GET_CIVILIZATIONS, (err, res, body) => {
+/*     res.statusCode === 200 //operador ternario y solo se usa cuando se tiene una línea de código
+      ? console.log(body)
+      : console.log('Error en la petición'); */
     if (res.statusCode === 200) {
       const json = JSON.parse(body);
       getOneCivilization(json);
