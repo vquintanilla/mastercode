@@ -35,7 +35,7 @@ const getOneCivilization = (json) => {
 const getAllCivilizations = () => {
   const GET_CIVILIZATIONS = `${AoE_API}/api/v1/civilizations`;
  
-  promesa = new Promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
   
     request.get(GET_CIVILIZATIONS, (err, res, body) => {
 
@@ -47,7 +47,7 @@ const getAllCivilizations = () => {
       reject(new Error("No se completo la peticion"));
         });
   })
-  return promesa;
+ // return promesa;
 }
 
 getAllCivilizations()
