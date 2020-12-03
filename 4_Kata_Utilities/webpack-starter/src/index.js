@@ -5,3 +5,4 @@ import greeting from './greeting'; //para buscar en archivos que están afuera d
 //usar la función
 console.log(greeting('generacion 2'));
 console.log(greeting('hola estoy igualandome'));
+console.log(greeting('ya instalé babel'));
