@@ -1,4 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 //commonJS
 module.exports = {
     module: {
@@ -11,7 +13,28 @@ module.exports = {
                         options: { minimize: true}
                     }
                 ]
-            }]
+            },
+            {
+                test: /\.js$/, //va a buscar archivos de js
+                exclude: /node_modules/, //significa que no va a buscar en la carpeta de node_modules
+                use: {
+                  loader: "babel-loader",
+                  options: {
+                    presets: ['@babel/preset-env']
+                  }
+                }
+            },
+            {
+                test: /\.(pnj|jpg|svg|jpeg|gif)$/, //va a buscar imagenes
+                use: ["file-loader"] //nombre del loader para las imagenes
+            },
+            {
+                test: /\.scss$/, //va a buscar archivos de sass
+                use: ["style-loader", //estilos en linea de css
+                    "css-loader", //porcesa los archivos de scss
+                    "sass-loader"]
+              }    
+        ]
     } ,
 
     plugins: [ //siven para ejecutar las configuraciones, para generar trabajos, generar jobs. Son objetos
@@ -19,5 +42,9 @@ module.exports = {
             template: "./src/index.html",
             file:"./index.html"
         }),
+        new MiniCssExtractPlugin({
+            filename: "[name].css",
+            chunkFilename: "[id].css" //esto es para manejar muchas lineas de codigo
+        })
     ]
 }
