@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  
+ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego Trivia</title>
+</head>
+
+<body>
+
+  
+  <nav> 
+   <text-nav>
+    Trivia
+   </text-nav>   
+  </nav>
+
+  <container>
+    <div>
+      <select id="categoria">
+        <option selected disabled hidden>Elija una categoría</option>
+      </select>
+    </div>
+    <div>
+      <select id="dificultad">
+        <option selected value="" disabled hidden>Elija la dificultad</option>
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </div>
+    <div>
+      <select id="tipo_respuesta">
+        <option selected value="" disabled hidden>Elija el tipo de respuesta</option>
+        <option value="multiple">Multiple Choice</option>
+        <option value="boolean">True / False</option>
+      </select>
+    </div>
+  </container>
+  <div id="preguntas"> </div>
+
+
+</body>
+
+</html>
