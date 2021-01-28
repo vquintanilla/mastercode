@@ -97,7 +97,7 @@ document.getElementById("tipo_respuesta")
 
           var respuesta = document.createElement('input');
           respuesta.type = "Escriba su respuesta";
-          preguntas.appendChild(respuesta);
+          respuestapreguntas.appendChild(respuesta);
        /*    ul.innerHTML = response.data.results[index_preguntas].question;
           let li = document.createElement('li');
           li.textContent(document.createTextNode(response.data.results[index_preguntas]));

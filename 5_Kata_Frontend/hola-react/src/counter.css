@@ -1,0 +1,10 @@
+.counter-container{
+    display: flex;
+}
+.counter-btn{
+    border: solid;
+    border-color: rgb(54, 50, 50);
+    color: #61dafb;
+    background-color: rgb(54, 53, 53);
+    border-radius: 5px;
+}
