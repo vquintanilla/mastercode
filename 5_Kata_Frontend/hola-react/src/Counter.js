@@ -26,7 +26,7 @@ class Counter extends React.Component {
             <h2>{this.props.title}</h2>
             <h4>{this.state.count}</h4>
             <div className="counter-container">
-            <button className="counter-btn" onClick={() => { this.setState({ count: this.state.count + 1 }) }}>Sumar</button> //this state es la unica forma de modificar los estados
+            <button className="counter-btn" onClick={() => { this.setState({ count: this.state.count + 1 }) }}>Sumar</button> {/* //this state es la unica forma de modificar los estados */}
             <button className="counter-btn" onClick={() => { this.setState({count: this.state.count - 1 }) }}>Restar</button>
             </div>
 
