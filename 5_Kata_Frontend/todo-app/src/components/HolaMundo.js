@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+/* import React, { Component } from 'react';
 
 class HolaMundo extends Component {
   constructor(props) {
@@ -32,6 +32,32 @@ class HolaMundo extends Component {
       </ React.Fragment>
     );
   }
+}
+
+export default HolaMundo; */
+import { useState } from 'react'; //{ useState }  hook
+function HolaMundo(props) {
+    //Para manejar el estado en una función usamos  el hook 'useState'
+    //const [texto, setTexto] = useState('Hola desde el componente');
+    const [texto, setTexto] = useState(props.texto);
+    const [edad, setEdad] = useState(0);
+    console.log( '🙋' , props);
+    return (
+        <>
+            <h1>Componente Hola Mundo - Edad {edad}</h1>
+            <h2>{texto}</h2>
+            <input
+                placeholder="Cambia el texto"
+                type="text"
+                onChange={e => setTexto(e.target.value)}
+            />
+            <input
+                placeholder="Cambia la edad"
+                type="number"
+                onChange={e => setEdad(e.target.value)}
+            />
+            </>
+    )
 }
 
 export default HolaMundo;
