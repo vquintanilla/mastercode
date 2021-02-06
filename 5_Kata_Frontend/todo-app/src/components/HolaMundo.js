@@ -39,7 +39,7 @@ import { useState } from 'react'; //{ useState }  hook
 function HolaMundo(props) {
     //Para manejar el estado en una función usamos  el hook 'useState'
     //const [texto, setTexto] = useState('Hola desde el componente');
-    const [texto, setTexto] = useState(props.texto);
+    const [texto, setTexto] = useState(props.texto); // const [texto, setTexto]  el primer elemento texto -> nombre de la propiedad del estado (en donde estoy guardando el estado), la segunda parte setTexto -> nombre a una funcion que me va a permitir transformar text del estado
     const [edad, setEdad] = useState(0);
     console.log( '🙋' , props);
     return (
