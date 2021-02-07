@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import './App.css';
 import HolaMundo from './components/HolaMundo';
 
@@ -7,13 +7,13 @@ function App() {
     <div className="App">
       <header className="App-header">
         Todo App
-         <HolaMundo texto="Hola desde App.js"/> {/*le estoy pasando texto al componente */}
+         <HolaMundo texto="Hola desde App.js"/> {/*le estoy pasando texto al componente }
       </header>
     </div>
   );
 }
 
-export default App;
+export default App; */
 
 // Ejercicio:
 /* return (
@@ -28,3 +28,18 @@ export default App;
 )
 */
 
+import React from 'react';
+import './App.css';
+import Todos from './components/Todos';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <Todos />
+      </header>
+    </div>
+  );
+}
+
+export default App;
