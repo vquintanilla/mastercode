@@ -3,4 +3,6 @@
     width: 500px;
     display: flex;
     margin: 5px;
+    border-color: aquamarine;
+    border-width: 5px;
   }
