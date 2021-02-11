@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import PropTypes from 'prop-types';
 
 import TacoComponent from './TacoComponent';
 
@@ -31,4 +32,8 @@ export default function Peticiones() {
       }
     </>
   )
+}
+
+TacoComponent.prototype={
+  taco: PropTypes.object,
 }
