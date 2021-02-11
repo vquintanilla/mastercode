@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 export default function Peticiones() {
-  const [texto, setTexto] = useState("");
+  const [taco, setTaco] = useState({});
 
   /*
     useEffect (escrito así) se ejecuta siempre
@@ -20,21 +21,38 @@ export default function Peticiones() {
     esto es el equivalente a
     componentDidMount
   */
-  useEffect(
-    () => {
-      console.log("Hola desde useEffect :}")
-    },
-    [],
-  );
+  // useEffect(
+  //   () => {
+  //     console.log("Hola desde useEffect :}")
+  //   },
+  //   [],
+  // );
+
+  const tacoAPI = 'http://taco-randomizer.herokuapp.com/random/';
+
+  async function getTaco() {
+    try {
+      const response = await axios.get(tacoAPI);
+      setTaco(response.data); 
+    } catch (error) {
+      alert("Ocurrió un error al traer el taco!!!!");
+    }
+  }
+
+  useEffect(() => {
+    setTimeout(getTaco, 1500);
+  }, []);
 
   return (
     <>
       <h1>Peticiones</h1>
       <h2>useEffect</h2>
-      <input
-        type="text"
-        onChange={(e) => setTexto(e.target.value)} />
-      <span>{ texto }</span>
+      <h3>- TacoFancy API -</h3>
+      <p> {
+        taco.condiment
+          ? taco.condiment.name
+          : 'Estamos eligiendo tu taco ideal...'
+      } </p>
     </>
   )
 }
