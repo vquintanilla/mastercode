@@ -2,19 +2,22 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
   Link
 } from "react-router-dom";
+import Routes from './Routes';
 import './App.css';
 
 export default function App() {
   return (
     <Router>
       <nav className="navbar">
-        <Link className="navbar__link">Home</Link>
-        <Link className="navbar__link">Ejemplo</Link>
-        <Link className="navbar__link">Peticiones</Link>
+        <Link to="/" className="navbar__link">Home</Link>
+        <Link to="/ejemplo" className="navbar__link">Ejemplo</Link>
+        <Link to="/peticiones" className="navbar__link">Peticiones</Link>
       </nav>
+      <Switch>
+        <Routes />
+      </Switch>
     </Router>
   );
 }
